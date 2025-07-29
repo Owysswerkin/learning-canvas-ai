@@ -28,7 +28,7 @@ const Navigation = ({ className = "" }: NavigationProps) => {
         onClick={(e) => handleSmoothScroll(e, 'pricing')}
         className="text-foreground hover:text-primary transition-colors cursor-pointer"
       >
-        Pricing
+        Community
       </a>
       <a 
         href="#about" 

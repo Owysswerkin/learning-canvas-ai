@@ -19,7 +19,7 @@ const MobileHero = () => {
         >
           Try Functional
         </a>
-        <VideoModalTrigger videoUrl="https://www.youtube.com/embed/SfI6FZhxF9I">
+        <VideoModalTrigger videoUrl="https://www.youtube.com/embed/oQFHEbNC7zI">
           <Button variant="secondary" className="w-full">
             See It in Action
           </Button>
