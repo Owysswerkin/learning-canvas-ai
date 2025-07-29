@@ -8,43 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 99.6%;
-    --foreground: 0 0% 9%;
+    --background: 320 30% 97%;
+    --foreground: 260 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    --card: 320 40% 98%;
+    --card-foreground: 260 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 320 40% 98%;
+    --popover-foreground: 260 15% 25%;
 
-    --primary: 142 69% 25%;
+    --primary: 280 60% 75%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 88%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 320 25% 92%;
+    --secondary-foreground: 260 15% 25%;
 
-    --muted: 0 0% 88%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 320 25% 90%;
+    --muted-foreground: 260 10% 55%;
 
-    --accent: 142 69% 25%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 70% 80%;
+    --accent-foreground: 260 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 142 69% 25%;
+    --border: 320 20% 85%;
+    --input: 320 20% 90%;
+    --ring: 280 60% 75%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     /* Custom design tokens */
-    --brand-green: 142 69% 25%;
-    --brand-green-hover: 142 69% 20%;
-    --surface-texture: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 99.6%), hsl(0 0% 98%));
-    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --brand-green: 280 60% 75%;
+    --brand-green-hover: 280 60% 70%;
+    --surface-texture: none;
+    --gradient-subtle: linear-gradient(135deg, hsl(320 40% 98%), hsl(280 30% 96%), hsl(240 35% 94%));
+    --gradient-primary: linear-gradient(135deg, hsl(280 60% 85%), hsl(320 50% 80%), hsl(200 60% 85%));
+    --gradient-glass: linear-gradient(135deg, hsla(320 40% 98% / 0.3), hsla(280 30% 96% / 0.2), hsla(240 35% 94% / 0.1));
+    --shadow-soft: 0 8px 32px -8px hsl(280 60% 75% / 0.15);
+    --shadow-glass: 0 8px 32px 0 hsla(280 60% 75% / 0.1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -64,33 +67,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
+    --background: 260 25% 8%;
+    --foreground: 320 15% 90%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 280 20% 12%;
+    --card-foreground: 320 15% 90%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 280 20% 12%;
+    --popover-foreground: 320 15% 90%;
 
-    --primary: 142 69% 35%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 280 50% 65%;
+    --primary-foreground: 260 25% 8%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 260 15% 18%;
+    --secondary-foreground: 320 15% 85%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 260 15% 16%;
+    --muted-foreground: 320 10% 65%;
 
-    --accent: 142 69% 35%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 60% 70%;
+    --accent-foreground: 260 25% 8%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 142 69% 35%;
+    --border: 260 15% 20%;
+    --input: 260 15% 18%;
+    --ring: 280 50% 65%;
+    
+    /* Dark mode gradients */
+    --gradient-subtle: linear-gradient(135deg, hsl(280 20% 12%), hsl(260 25% 10%), hsl(240 30% 8%));
+    --gradient-primary: linear-gradient(135deg, hsl(280 50% 35%), hsl(320 40% 30%), hsl(200 50% 35%));
+    --gradient-glass: linear-gradient(135deg, hsla(280 20% 12% / 0.4), hsla(260 25% 10% / 0.3), hsla(240 30% 8% / 0.2));
+    --shadow-glass: 0 8px 32px 0 hsla(280 50% 25% / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -109,8 +118,8 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
-    background-image: var(--surface-texture);
-    background-size: 40px 40px;
+    background: var(--gradient-subtle);
+    background-attachment: fixed;
   }
 
   html {
@@ -128,10 +137,15 @@ All colors MUST be HSL.
   }
 
   .surface-glass {
-    @apply bg-white/30 backdrop-blur-sm;
+    background: var(--gradient-glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsla(320 40% 98% / 0.2);
+    box-shadow: var(--shadow-glass);
   }
 
   .surface-elevated {
     @apply bg-card shadow-soft border border-border/50;
+    background: var(--gradient-glass);
+    backdrop-filter: blur(8px);
   }
 }
