@@ -9,7 +9,7 @@ const MobileHero = () => {
         <img 
           src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
           alt="" 
-          className="w-96 h-96"
+          className="w-full aspect-square"
         />
       </div>
       <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
