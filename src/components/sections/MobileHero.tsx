@@ -4,22 +4,19 @@ import { VideoModalTrigger } from "@/components/ui/video-modal";
 const MobileHero = () => {
   return (
     <div className="md:hidden w-full relative overflow-hidden">
-      {/* Large background icon */}
-      <div className="absolute -top-20 -right-20 opacity-5 pointer-events-none">
+      <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
         <img 
           src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
-          alt="" 
-          className="w-80 h-80"
+          alt="Functional Logo" 
+          className="w-8 h-8" 
         />
-      </div>
-      <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
-      <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug">
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug relative z-20">
         Design training that drives real results
-      </h1>
-      <p className="text-muted-foreground text-base leading-relaxed">
+        </h1>
+        <p className="text-muted-foreground text-base leading-relaxed relative z-20">
         You start with performance gaps, leverage built-in frameworks and AI guidance, craft scenarios, and generate microlearning that gets SME endorsement and improves performance.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-3 w-full">
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 w-full relative z-20">
         <a 
           href="https://theboringlearner.com/" 
           target="_blank" 
