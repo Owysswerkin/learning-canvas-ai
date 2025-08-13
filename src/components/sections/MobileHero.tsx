@@ -3,7 +3,16 @@ import { VideoModalTrigger } from "@/components/ui/video-modal";
 
 const MobileHero = () => {
   return (
-    <div className="md:hidden w-full surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
+    <div className="md:hidden w-full relative overflow-hidden">
+      {/* Large background icon */}
+      <div className="absolute -top-20 -right-20 opacity-5 pointer-events-none">
+        <img 
+          src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
+          alt="" 
+          className="w-80 h-80"
+        />
+      </div>
+      <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
       <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug">
         Design training that drives real results
       </h1>
@@ -24,6 +33,7 @@ const MobileHero = () => {
             See It in Action
           </Button>
         </VideoModalTrigger>
+      </div>
       </div>
     </div>
   );
