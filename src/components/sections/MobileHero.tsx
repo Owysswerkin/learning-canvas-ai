@@ -4,15 +4,12 @@ import { VideoModalTrigger } from "@/components/ui/video-modal";
 const MobileHero = () => {
   return (
     <div className="md:hidden w-full relative overflow-hidden">
-      {/* Large background icon */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 pointer-events-none z-18">
+      <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
         <img 
           src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
-          alt="" 
-          className="w-[1000%] aspect-square"
+          alt="Functional Logo" 
+          className="w-8 h-8" 
         />
-      </div>
-      <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-snug relative z-20">
         Design training that drives real results
         </h1>
