@@ -5,11 +5,11 @@ const MobileHero = () => {
   return (
     <div className="md:hidden w-full relative overflow-hidden">
       {/* Large background icon */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 pointer-events-none z-0">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 pointer-events-none z-20">
         <img 
           src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
           alt="" 
-          className="w-full aspect-square"
+          className="w-[500%] aspect-square"
         />
       </div>
       <div className="relative z-10 surface-glass px-4 pt-4 pb-6 flex flex-col gap-4 rounded-lg">
