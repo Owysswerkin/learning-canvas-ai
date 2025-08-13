@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Button } from "./button";
 
 interface VideoModalProps {
@@ -10,13 +11,14 @@ interface VideoModalProps {
 const VideoModal = ({ isOpen, onClose, videoUrl }: VideoModalProps) => {
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[999]">
+  return createPortal(
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[10000]">
       <div className="surface-elevated rounded-lg overflow-hidden max-w-2xl w-full mx-4 relative">
         <Button
           variant="ghost"
           onClick={onClose}
           className="absolute top-2 right-3 text-muted-foreground hover:text-foreground text-xl z-10"
+          aria-label="Close video modal"
         >
           ×
         </Button>
@@ -27,10 +29,12 @@ const VideoModal = ({ isOpen, onClose, videoUrl }: VideoModalProps) => {
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
+            title="Product demo video"
           />
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
