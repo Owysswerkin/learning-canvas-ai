@@ -6,7 +6,7 @@ const HeroSection = () => {
     <aside className="hidden md:flex flex-col justify-between w-1/3 p-8 border-r border-border sticky top-0 h-screen">
       <div className="flex flex-col gap-6">
         <img 
-          src="https://res.cloudinary.com/dylxm9fqw/image/upload/v1748348396/android-chrome-512x512_btavah.png" 
+          src="/lovable-uploads/8d195fae-d1c7-4033-8512-c2f88a5d6d21.png" 
           alt="Functional Logo" 
           className="w-8 h-8" 
         />
