@@ -11,7 +11,7 @@ const VideoModal = ({ isOpen, onClose, videoUrl }: VideoModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[999]">
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999]">
       <div className="surface-elevated rounded-lg overflow-hidden max-w-2xl w-full mx-4 relative">
         <Button
           variant="ghost"
