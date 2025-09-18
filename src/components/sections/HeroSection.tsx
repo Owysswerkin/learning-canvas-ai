@@ -32,14 +32,18 @@ const HeroSection = () => {
           </VideoModalTrigger>
         </div>
       </div>
-      <div className="mt-8 text-muted-foreground text-sm flex flex-col gap-4">
-        <div className="flex items-center gap-4">
-          <span>Trusted by</span>
-          <div className="flex gap-4 items-center">
-            <span className="font-semibold">EduCorp</span>
-            <span className="font-semibold">Learnify</span>
-          </div>
-        </div>
+      <div className="mt-8 text-muted-foreground text-sm">
+        <p>
+          Functional is an instructional system design tool developed by{" "}
+          <a 
+            href="https://www.linkedin.com/in/trustinneo/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            Trustin
+          </a>
+        </p>
       </div>
     </aside>
   );
